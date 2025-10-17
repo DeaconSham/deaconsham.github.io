@@ -42,6 +42,15 @@
             background-color: #132d4e;
             color: #64ffda;
         }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="leading-relaxed">
@@ -113,7 +122,7 @@
         </section>
 
         <!-- About Me -->
-        <section id="about" class="py-20 relative">
+        <section id="about" class="py-20 relative fade-in-section">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                 <div>
                     <h2 class="section-heading mb-12">About Me</h2>
@@ -136,7 +145,7 @@
         </section>
 
         <!-- Work Experience -->
-        <section id="experience" class="py-20">
+        <section id="experience" class="py-20 fade-in-section">
             <h2 class="section-heading mb-12">Where I've Worked</h2>
             <div class="space-y-12">
                 <!-- Midnight Sun -->
@@ -206,7 +215,7 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="py-20">
+        <section id="projects" class="py-20 fade-in-section">
             <h2 class="section-heading mb-12">Personal Projects</h2>
             
             <!-- Featured Projects -->
@@ -382,7 +391,7 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills" class="py-20">
+        <section id="skills" class="py-20 fade-in-section">
             <h2 class="section-heading mb-12">My Skills</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="glass-effect p-6 rounded-lg">
@@ -430,7 +439,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="py-20 text-center">
+        <section id="contact" class="py-20 text-center fade-in-section">
             <h2 class="text-lg text-highlight font-mono mb-2">What's Next?</h2>
             <h3 class="text-4xl font-bold text-slate-200">Get In Touch</h3>
             <p class="max-w-xl mx-auto mt-4 mb-8 text-slate-400">
@@ -485,6 +494,23 @@
             }
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
         }, false);
+
+        // Scroll-triggered fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+
+        const sections = document.querySelectorAll('.fade-in-section');
+        sections.forEach(section => {
+            observer.observe(section);
+        });
 
     </script>
 </body>
