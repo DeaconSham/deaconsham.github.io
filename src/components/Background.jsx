@@ -1,8 +1,31 @@
+import { useState, useEffect } from 'react'
+
 function Background() {
+    const [pageHeight, setPageHeight] = useState(1200)
+
+    useEffect(() => {
+        const updateHeight = () => {
+            setPageHeight(document.documentElement.scrollHeight)
+        }
+        updateHeight()
+        window.addEventListener('resize', updateHeight)
+        const observer = new ResizeObserver(updateHeight)
+        observer.observe(document.body)
+        return () => {
+            window.removeEventListener('resize', updateHeight)
+            observer.disconnect()
+        }
+    }, [])
+
+    // Scale factor: SVG coordinate space maps 1:1 with pixels at width=120px
+    // viewBox width is 240, displayed at 120px → 2:1 ratio
+    // So SVG y-coordinate = pageHeight * 2
+    const svgHeight = pageHeight * 2
+
     return (
         <svg
             className="bg-decoration"
-            viewBox="0 0 240 1200"
+            viewBox={`0 0 240 ${svgHeight}`}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -17,19 +40,19 @@ function Background() {
                 {/*Transit Lines*/}
                 {/*Red*/}
                 <path
-                    d="M 40 100 L 40 320 L 70 350 L 70 1250"
+                    d={`M 40 100 L 40 320 L 70 350 L 70 ${svgHeight}`}
                     stroke="#ee352e" strokeWidth="6" strokeLinejoin="round" fill="none"
                 />
 
                 {/*Yellow*/}
                 <path
-                    d="M 90 100 L 90 1250"
+                    d={`M 90 100 L 90 ${svgHeight}`}
                     stroke="#fccc0a" strokeWidth="6" strokeLinejoin="round" fill="none"
                 />
 
                 {/*Blue*/}
                 <path
-                    d="M 140 100 L 140 450 L 110 480 L 110 1250"
+                    d={`M 140 100 L 140 450 L 110 480 L 110 ${svgHeight}`}
                     stroke="#0039a6" strokeWidth="6" strokeLinejoin="round" fill="none"
                 />
 
@@ -52,16 +75,17 @@ function Background() {
                     {/*Mid-merge single station*/}
                     <circle cx="90" cy="460" r="4.5" />
 
-                    {/*Bottom individual stations*/}
-                    {/*Row 1*/}
-                    <circle cx="70" cy="800" r="4.5" />
-                    <circle cx="90" cy="800" r="4.5" />
-                    <circle cx="110" cy="800" r="4.5" />
-
-                    {/*Row 2*/}
-                    <circle cx="70" cy="1050" r="4.5" />
-                    <circle cx="90" cy="1050" r="4.5" />
-                    <circle cx="110" cy="1050" r="4.5" />
+                    {/*Bottom stations — generated dynamically*/}
+                    {Array.from({ length: Math.floor((svgHeight - 800) / 250) + 1 }, (_, i) => {
+                        const y = 800 + i * 250
+                        return (
+                            <g key={`station-row-${i}`}>
+                                <circle cx="70" cy={y} r="4.5" />
+                                <circle cx="90" cy={y} r="4.5" />
+                                <circle cx="110" cy={y} r="4.5" />
+                            </g>
+                        )
+                    })}
                 </g>
 
                 {/*Hub*/}
