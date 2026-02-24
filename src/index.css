@@ -38,8 +38,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 120px;
-    height: auto;
+    width: calc((100vw - var(--max-width)) / 4);
     z-index: 0;
     pointer-events: none;
 }
