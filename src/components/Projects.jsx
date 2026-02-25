@@ -33,10 +33,10 @@ const projects = [
 
 function Projects() {
     return (
-        <section className="section projects-section">
+        <section id="projects" className="section projects-section">
             <h2 className="section-label">
                 PROJECTS
-                <span className="mta-badge" style={{ backgroundColor: '#00933c' }}>2</span>
+                <span className="ttc-badge" style={{ backgroundColor: '#00933c' }}>2</span>
             </h2>
             <ul className="project-list">
                 {projects.map((project) => (

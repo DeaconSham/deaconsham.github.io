@@ -6,7 +6,8 @@
     --color-link-underline: #7a7c7f;
     --color-divider: #222222;
     --color-accent: #ee352e;
-    --font-stack: Futura, 'Trebuchet MS', Arial, sans-serif;
+    --font-heading: Futura;
+    --font-body: 'Helvetica Neue';
     --max-width: 620px;
     --spacing-section: 2.5rem;
 }
@@ -26,7 +27,7 @@ html {
 }
 
 body {
-    font-family: var(--font-stack);
+    font-family: var(--font-body);
     font-size: 15px;
     font-weight: 425;
     line-height: 1.73;
@@ -61,6 +62,7 @@ h1,
 h2,
 h3,
 h4 {
+    font-family: var(--font-heading);
     font-weight: 700;
     letter-spacing: -0.01em;
 }
@@ -90,6 +92,7 @@ a:hover {
 }
 
 .section-label {
+    font-family: var(--font-heading);
     font-size: 20px;
     font-weight: 700;
     color: var(--color-text);
@@ -101,7 +104,7 @@ a:hover {
     gap: 1rem;
 }
 
-.mta-badge {
+.ttc-badge {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -110,20 +113,52 @@ a:hover {
     border-radius: 50%;
     border: 2px solid #ffffff;
     box-sizing: border-box;
-    font-family: 'Swiss 721 BT', Helvetica, sans-serif;
+    font-family: 'Helvetica Neue';
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
     color: #ffffff;
     letter-spacing: 0;
     text-transform: none;
     flex-shrink: 0;
 }
 
-.bio-name {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 0.15rem;
-    letter-spacing: 0;
+.station-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.station-name {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.station-lines {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.station-lines .ttc-badge {
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    color: #ffffff;
+}
+
+.station-lines .ttc-badge:hover {
+    transform: scale(1.12);
+    border: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 .bio-tagline {
@@ -209,6 +244,10 @@ a:hover {
 @media (max-width: 640px) {
     .container {
         padding: 3rem 1.25rem 2rem;
+    }
+
+    .station-name {
+        font-size: 1.5rem;
     }
 
     .project-item {

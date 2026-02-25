@@ -36,13 +36,13 @@ function Background() {
     // Station type cycle: 0=small, 1=hub, 2=big
     const renderStation = (cx, y, type) => {
         if (type === 0) {
-            // Small station — filled white dot with thin black outline
+            // Small station
             return <circle cx={cx} cy={y} r="3.5" fill="#ffffff" stroke="#0a0a0a" strokeWidth="1.5" />
         } else if (type === 1) {
-            // Hub station — pill with two connected dots
+            // Hub station
             return null // rendered separately as a group
         } else {
-            // Big station — ring with white outline and dark center
+            // Big station
             return (
                 <g>
                     <circle cx={cx} cy={y} r="6" fill="#0a0a0a" stroke="#ffffff" strokeWidth="2.5" />
@@ -100,7 +100,7 @@ function Background() {
 
                 {/*Stations along the top spread*/}
 
-                {/*Top Terminals — big ring stations*/}
+                {/*Top Terminals*/}
                 <g>
                     {renderStation(40, 100, 2)}
                     {renderStation(90, 100, 2)}
@@ -120,7 +120,7 @@ function Background() {
                     {renderStation(140, 500, 0)}
                 </g>
 
-                {/*Hub — where all lines are straight*/}
+                {/*Hub*/}
                 {renderHubRow(750)}
 
                 {/*Repeating small stations*/}

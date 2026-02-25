@@ -1,9 +1,9 @@
 function Connect() {
     return (
-        <section className="section connect-section">
+        <section id="connect" className="section connect-section">
             <h2 className="section-label">
                 CONNECT
-                <span className="mta-badge" style={{ backgroundColor: '#b933ad' }}>4</span>
+                <span className="ttc-badge" style={{ backgroundColor: '#b933ad' }}>4</span>
             </h2>
             <div className="connect-links">
                 <a href="https://github.com/DeaconSham" target="_blank" rel="noopener noreferrer">

@@ -1,9 +1,9 @@
 function Experience() {
     return (
-        <section className="section experience-section">
+        <section id="experience" className="section experience-section">
             <h2 className="section-label">
                 EXPERIENCE
-                <span className="mta-badge" style={{ backgroundColor: '#fccc0a', color: '#0a0a0a' }}>1</span>
+                <span className="ttc-badge" style={{ backgroundColor: '#fccc0a', color: '#0a0a0a' }}>1</span>
             </h2>
 
             <div className="experience-block">
