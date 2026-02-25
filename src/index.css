@@ -312,8 +312,10 @@ a:hover {
         font-size: 1.5rem;
     }
 
-    .project-item {
+    .project-item,
+    .experience-header {
         flex-direction: column;
+        align-items: flex-start;
         gap: 0.15rem;
     }
 
