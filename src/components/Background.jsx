@@ -67,7 +67,7 @@ function Background() {
             xmlns="http://www.w3.org/2000/svg"
         >
             <g opacity="0.9">
-                <g fontFamily="Futura" fontSize="12" fontWeight="700" letterSpacing="0.25em" fill="#ffffff" textAnchor="start">
+                <g fontFamily="Futura, 'Trebuchet MS', Arial, sans-serif" fontSize="12" fontWeight="700" letterSpacing="0.25em" fill="#ffffff" textAnchor="start">
                     <text x="35" y="90" transform="rotate(-40 35 90)">OTTAWA</text>
                     <text x="85" y="90" transform="rotate(-40 85 90)">TORONTO</text>
                     <text x="135" y="90" transform="rotate(-40 135 90)">WATERLOO</text>

@@ -6,8 +6,8 @@
     --colour-link-underline: #7a7c7f;
     --colour-divider: #222222;
     --colour-accent: #ee352e;
-    --font-heading: Futura;
-    --font-body: 'Helvetica Neue';
+    --font-heading: Futura, 'Trebuchet MS', Arial, sans-serif;
+    --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --max-width: 620px;
     --spacing-section: 2.5rem;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .subway-station-label {
-    font-family: Futura, var(--font-heading);
+    font-family: var(--font-heading);
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 0.25em;
@@ -153,7 +153,7 @@ a:hover {
     border-radius: 50%;
     border: 2px solid #ffffff;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 22px;
     font-weight: 700;
     color: #ffffff;
