@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import Navigation from './components/Navigation'
 import Background from './components/Background'
 import Bio from './components/Bio'
 import Experience from './components/Experience'
@@ -10,6 +11,7 @@ function App() {
     return (
         <>
             <Background />
+            <Navigation />
             <div className="container">
                 <Header />
                 <Bio />

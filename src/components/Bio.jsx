@@ -1,6 +1,6 @@
 function Bio() {
     return (
-        <section className="section">
+        <section id="bio" className="section">
             <p className="bio-tagline">
                 Electrical Engineering at the University of Waterloo
             </p>

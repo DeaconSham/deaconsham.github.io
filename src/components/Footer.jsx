@@ -1,7 +1,7 @@
 function Footer() {
     return (
         <footer className="footer">
-            <p>Built with React.js and Vite</p>
+            <p>© 2026 Deacon Sham</p>
         </footer>
     )
 }

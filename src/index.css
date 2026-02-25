@@ -36,16 +36,54 @@ body {
     background-color: var(--color-bg);
 }
 
+.subway-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 10, 10, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-divider);
+    padding: 0.4rem 1rem;
+}
+
+.subway-nav-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subway-nav-svg {
+    width: 100%;
+    height: 52px;
+    overflow: visible;
+}
+
+.subway-station-dot {
+    transition: r 0.2s ease, fill 0.3s ease;
+}
+
+.subway-station-label {
+    font-family: Futura, var(--font-heading);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    transition: fill 0.3s ease;
+    user-select: none;
+}
+
 .bg-decoration {
     position: absolute;
-    top: 0;
+    top: 52px;
     left: 0;
     width: calc((100vw - var(--max-width)) / 4);
     z-index: 0;
     pointer-events: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .bg-decoration {
         display: none;
     }
@@ -54,7 +92,7 @@ body {
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 5rem 1.5rem 3rem;
+    padding: 5rem 1.5rem 1.5rem;
     position: relative;
     z-index: 1;
 }
@@ -99,7 +137,7 @@ a:hover {
     color: var(--color-text);
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -196,6 +234,7 @@ a:hover {
 .project-item a {
     font-weight: 550;
     flex-shrink: 0;
+    -webkit-text-stroke: 0;
 }
 
 .project-desc {
@@ -230,8 +269,8 @@ a:hover {
 }
 
 .footer {
-    margin-top: 4rem;
-    padding-top: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 0.75rem;
     border-top: 1px solid var(--color-divider);
     text-align: center;
 }
