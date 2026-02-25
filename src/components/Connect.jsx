@@ -12,15 +12,15 @@ function Connect() {
                 <a href="https://linkedin.com/in/deacon-sham" target="_blank" rel="noopener noreferrer">
                     Linkedin
                 </a>
-                <a href="mailto:deaconsham@icloud.com">
-                    Email
-                </a>
                 <a
                     href="https://drive.google.com/file/d/18Oen_U3DZjfNGXK8AQA-TmT0eMj_KTsM/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Résumé
+                </a>
+                <a href="mailto:deaconsham@icloud.com">
+                    deaconsham@icloud.com
                 </a>
             </div>
         </section>
