@@ -1,21 +1,16 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 function Background() {
     const [pageHeight, setPageHeight] = useState(1200)
-    const [svgWidth, setSvgWidth] = useState(120)
-    const svgRef = useRef(null)
 
     useEffect(() => {
         const update = () => {
             const container = document.querySelector('.container')
             if (container) {
-                setPageHeight(container.scrollHeight)
-            } else {
-                setPageHeight(document.body.scrollHeight)
-            }
-
-            if (svgRef.current) {
-                setSvgWidth(svgRef.current.clientWidth || 120)
+                const rect = container.getBoundingClientRect()
+                const absoluteBottom = rect.bottom + window.scrollY
+                const truePageBottom = Math.max(absoluteBottom, window.innerHeight)
+                setPageHeight(truePageBottom - 52)
             }
         }
         update()
@@ -28,10 +23,10 @@ function Background() {
         }
     }, [])
 
-    const svgHeight = pageHeight * 240 / svgWidth
+    const svgHeight = pageHeight
 
     const stationStart = 950
-    const stationSpacing = 50
+    const stationSpacing = 175
     const stationCount = Math.max(0, Math.floor((svgHeight - stationStart - 200) / stationSpacing))
 
     const endHubY = stationStart + stationCount * stationSpacing + 150
@@ -63,9 +58,10 @@ function Background() {
 
     return (
         <svg
-            ref={svgRef}
             className="bg-decoration"
-            viewBox={`0 0 240 ${svgHeight}`}
+            width="360"
+            viewBox={`0 0 360 ${svgHeight}`}
+            preserveAspectRatio="xMinYMin meet"
             style={{ height: `${pageHeight}px` }}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

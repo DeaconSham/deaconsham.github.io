@@ -78,7 +78,7 @@ body {
     position: absolute;
     top: 52px;
     left: 0;
-    width: calc((100vw - var(--max-width)) / 4);
+    width: 360px;
     z-index: 0;
     pointer-events: none;
 }
