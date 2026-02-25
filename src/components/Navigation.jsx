@@ -6,9 +6,9 @@ const stations = [
     { id: 'projects', label: 'PROJECTS' },
 ]
 
-const LINE_COLOR = '#fccc0a'
-const COLOR_PASSED = '#00933c'
-const COLOR_UPCOMING = '#ee352e'
+const LINE_COLOUR = '#fccc0a'
+const COLOUR_PASSED = '#00933c'
+const COLOUR_UPCOMING = '#ee352e'
 
 function Navigation() {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -68,7 +68,7 @@ function Navigation() {
                     <line
                         x1={getStationX(0)} y1={lineY}
                         x2={getStationX(stations.length - 1)} y2={lineY}
-                        stroke={LINE_COLOR}
+                        stroke={LINE_COLOUR}
                         strokeWidth={6}
                     />
 
@@ -79,8 +79,8 @@ function Navigation() {
                         const isHovered = hoveredIndex === i
                         const isActive = isPassed || isHovered
 
-                        const stationColor = isHovered ? COLOR_PASSED : (isPassed ? COLOR_PASSED : COLOR_UPCOMING)
-                        const labelColor = isActive ? '#ffffff' : '#7a7c7f'
+                        const stationColour = isHovered ? COLOUR_PASSED : (isPassed ? COLOUR_PASSED : COLOUR_UPCOMING)
+                        const labelColour = isActive ? '#ffffff' : '#7a7c7f'
 
                         return (
                             <g
@@ -96,7 +96,7 @@ function Navigation() {
                                     cx={cx} cy={lineY}
                                     r={isHovered ? 10 : 8}
                                     fill="#0a0a0a"
-                                    stroke={stationColor}
+                                    stroke={stationColour}
                                     strokeWidth={3}
                                     className="subway-station-dot"
                                 />
@@ -114,7 +114,7 @@ function Navigation() {
                                     y={lineY + 20}
                                     textAnchor="middle"
                                     className="subway-station-label"
-                                    fill={labelColor}
+                                    fill={labelColour}
                                 >
                                     {station.label}
                                 </text>
