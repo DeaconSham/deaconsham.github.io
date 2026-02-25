@@ -22,7 +22,7 @@ function Background() {
         }
     }, [])
 
-    // Scale viewBox height so rendered SVG height = pageHeight exactly
+    // Scale viewbox height so rendered SVG height = pageHeight exactly
     const svgHeight = pageHeight * 240 / svgWidth
 
     // Repeating stations start after the top pattern
@@ -80,22 +80,22 @@ function Background() {
                 </g>
 
                 {/*Transit Lines*/}
-                {/*Red*/}
+                {/*Green*/}
                 <path
                     d={`M 40 100 L 40 380 L 70 410 L 70 ${svgHeight}`}
-                    stroke="#ee352e" strokeWidth="6" strokeLinejoin="round" fill="none"
+                    stroke="#fccc0a" strokeWidth="6" strokeLinejoin="round" fill="none"
                 />
 
                 {/*Yellow*/}
                 <path
                     d={`M 90 100 L 90 ${svgHeight}`}
-                    stroke="#fccc0a" strokeWidth="6" strokeLinejoin="round" fill="none"
+                    stroke="#00933c" strokeWidth="6" strokeLinejoin="round" fill="none"
                 />
 
-                {/*Blue*/}
+                {/*Purple*/}
                 <path
                     d={`M 140 100 L 140 600 L 110 630 L 110 ${svgHeight}`}
-                    stroke="#0039a6" strokeWidth="6" strokeLinejoin="round" fill="none"
+                    stroke="#b933ad" strokeWidth="6" strokeLinejoin="round" fill="none"
                 />
 
                 {/*Stations along the top spread*/}
