@@ -3,6 +3,7 @@ import { useState, useEffect, useCallback } from 'react'
 const stations = [
     { id: 'bio', label: 'BIO' },
     { id: 'experience', label: 'EXPERIENCE' },
+    { id: 'extracurricular', label: 'EXTRACURRICULARS' },
     { id: 'projects', label: 'PROJECTS' },
 ]
 
@@ -64,7 +65,7 @@ function Navigation() {
                     viewBox={`0 0 ${svgWidth} 52`}
                     preserveAspectRatio="xMidYMid meet"
                 >
-                    {/* Yellow main line — starts and ends at stations */}
+                    {/*Yellow main line*/}
                     <line
                         x1={getStationX(0)} y1={lineY}
                         x2={getStationX(stations.length - 1)} y2={lineY}
@@ -72,7 +73,7 @@ function Navigation() {
                         strokeWidth={6}
                     />
 
-                    {/* Station dots and labels */}
+                    {/*Station dots and labels*/}
                     {stations.map((station, i) => {
                         const cx = getStationX(i)
                         const isPassed = i <= activeIndex
@@ -91,7 +92,7 @@ function Navigation() {
                                 onMouseLeave={() => setHoveredIndex(null)}
                                 style={{ cursor: 'pointer' }}
                             >
-                                {/* Big station — outer ring */}
+                                {/*Big station — outer ring*/}
                                 <circle
                                     cx={cx} cy={lineY}
                                     r={isHovered ? 10 : 8}
@@ -100,7 +101,7 @@ function Navigation() {
                                     strokeWidth={3}
                                     className="subway-station-dot"
                                 />
-                                {/* Big station — inner dot */}
+                                {/*Big station — inner dot*/}
                                 <circle
                                     cx={cx} cy={lineY}
                                     r={isHovered ? 4 : 3}
@@ -108,7 +109,7 @@ function Navigation() {
                                     className="subway-station-dot"
                                 />
 
-                                {/* Station label */}
+                                {/*Station label*/}
                                 <text
                                     x={cx}
                                     y={lineY + 20}

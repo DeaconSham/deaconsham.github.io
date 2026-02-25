@@ -128,6 +128,7 @@ a:hover {
 
 .section {
     margin-bottom: var(--spacing-section);
+    scroll-margin-top: 80px;
 }
 
 .section-label {
@@ -215,8 +216,29 @@ a:hover {
     margin-bottom: 0;
 }
 
-.experience-block p {
-    color: var(--colour-text);
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.2rem;
+    gap: 1rem;
+}
+
+.experience-header a {
+    font-weight: 550;
+    -webkit-text-stroke: 0;
+}
+
+.experience-date {
+    font-size: 13px;
+    color: var(--colour-text-secondary);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.experience-desc {
+    color: var(--colour-text-secondary);
+    font-size: 14px;
 }
 
 .project-list {
