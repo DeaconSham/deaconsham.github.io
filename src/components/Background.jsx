@@ -68,9 +68,9 @@ function Background() {
         >
             <g opacity="0.9">
                 <g fontFamily="'Toronto Subway', Futura, 'Trebuchet MS', Arial, sans-serif" fontSize="12" fontWeight="700" letterSpacing="0.25em" fill="#ffffff" textAnchor="start">
-                    <text x="35" y="90" transform="rotate(-40 35 90)">OTTAWA</text>
-                    <text x="85" y="90" transform="rotate(-40 85 90)">TORONTO</text>
-                    <text x="135" y="90" transform="rotate(-40 135 90)">WATERLOO</text>
+                    <text x="40" y="90" transform="rotate(-40 40 90)">OTTAWA</text>
+                    <text x="90" y="90" transform="rotate(-40 90 90)">TORONTO</text>
+                    <text x="140" y="90" transform="rotate(-40 140 90)">WATERLOO</text>
                 </g>
 
                 <path
