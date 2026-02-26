@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Toronto Subway';
+    src: url('/fonts/TorontoSubwayBold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/HelveticaNeue.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --colour-text: #ffffff;
     --colour-text-secondary: #7a7c7f;
@@ -6,8 +22,9 @@
     --colour-link-underline: #7a7c7f;
     --colour-divider: #222222;
     --colour-accent: #ee352e;
-    --font-heading: Futura, 'Trebuchet MS', Arial, sans-serif;
+    --font-heading: 'Toronto Subway', Futura, 'Trebuchet MS', Arial, sans-serif;
     --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
     --max-width: 620px;
     --spacing-section: 2.5rem;
 }
