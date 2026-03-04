@@ -3,13 +3,13 @@ const extracurriculars = [
         title: 'Outreach Executive - CUTC Organization',
         url: 'https://cutc.ca/',
         date: 'September 2025 - Present',
-        desc: 'Expanded conference reach to 500+ participants by spearheading corporate outreach initiatives and directing a 70+ person hackathon.'
+        desc: 'Expanded conference reach to 400+ participants by spearheading corporate outreach initiatives and directing a 70+ person hackathon.'
     },
     {
         title: 'NCCP Certfied Coach - Power Badminton Academy',
         url: 'https://www.ottawapba.ca/',
         date: 'September 2023 - June 2024',
-        desc: 'Launched a new club attracting 50+ inaugural participants and logging 600+ coaching hours by managing all phases of conception and implementation.'
+        desc: 'Launched a new club attracting 50+ inaugural participants and logging 500+ coaching hours by managing all phases of conception and implementation.'
     },
     {
         title: 'NCCP Certfied Coach - Soong Badminton Academy',
