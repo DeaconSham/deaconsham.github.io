@@ -3,19 +3,19 @@ const extracurriculars = [
         title: 'Outreach Executive - CUTC Organization',
         url: 'https://cutc.ca/',
         date: 'September 2025 - Present',
-        desc: 'Built strategic industry partnerships and managed corporate engagement for Canada’s largest student-led technology conference.'
+        desc: 'Expanded conference reach to 500+ participants by spearheading corporate outreach initiatives and directing a 70+ person hackathon.'
     },
     {
         title: 'NCCP Certfied Coach - Power Badminton Academy',
         url: 'https://www.ottawapba.ca/',
         date: 'September 2023 - June 2024',
-        desc: 'Initiated the formation of a new badminton club in Ottawa, contributing to its conception, planning, and implementation.'
+        desc: 'Launched a new club attracting 50+ inaugural participants and logging 500+ coaching hours by managing all phases of conception and implementation.'
     },
     {
         title: 'NCCP Certfied Coach - Soong Badminton Academy',
         url: 'https://www.badmintonontario.ca/directory/soong-badminton-academy/',
         date: 'October 2022 - August 2023',
-        desc: 'Mentored and coached athletes by delivering individualized lesson plans and leading team training sessions.'
+        desc: 'Improved the technical skills of 200+ athletes by developing 10+ customized lesson plans and providing systematic, active feedback during training.'
     }
 ];
 

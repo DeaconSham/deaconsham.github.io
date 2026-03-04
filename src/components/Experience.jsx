@@ -3,19 +3,19 @@ const experiences = [
         title: 'STEM Outreach Instructor - Carleton University',
         url: 'https://carleton.ca/',
         date: 'January 2026 - Present',
-        desc: 'Mobilizing technical educational programming across the National Capital Region.'
+        desc: 'Empowered 2,000+ students across 20 schools by delivering 10+ curriculum-aligned technical workshops and coordinating program logistics.'
     },
     {
         title: 'Electrical and Firmware Team Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
-        desc: 'Designed a custom battery monitoring PCB and implemented a data acquisition task in FreeRTOS utilizing DMA and ADCs on an STM32 microcontroller.'
+        desc: 'Ensured voltage system protection by implementing I2C sensor drivers and developing C drivers for high-voltage charger safety alerts.'
     },
     {
         title: 'Research Assistant - University of Ottawa SQO Group',
         url: 'https://sqogroup.ca/',
         date: 'January 2024 - August 2024',
-        desc: 'Fabricated voltage tunable liquid crystal optics using DMD photoalignment and automated Stokes vector reconstruction via Python, supervised by Dr. Ebrahim Karimi.'
+        desc: 'Reduced manual data processing time by 90% by developing an automated Python program and fabricating voltage-tunable liquid crystal optics.'
     }
 ];
 

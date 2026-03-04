@@ -17,7 +17,7 @@ function Connect() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Résumé
+                    Resume
                 </a>
                 <a href="mailto:deaconsham@icloud.com">
                     deaconsham@icloud.com
