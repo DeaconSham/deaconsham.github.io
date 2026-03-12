@@ -26,7 +26,7 @@ function Background() {
     const svgHeight = pageHeight
 
     const stationStart = 950
-    const stationSpacing = 175
+    const stationSpacing = 350
     const stationCount = Math.max(0, Math.floor((svgHeight - stationStart - 200) / stationSpacing))
 
     const endHubY = stationStart + stationCount * stationSpacing + 150
