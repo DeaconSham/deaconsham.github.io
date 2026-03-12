@@ -340,3 +340,43 @@ a:hover {
         text-align: left;
     }
 }
+
+/* Skills Section Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.skill-category-title {
+    font-size: 15px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    color: var(--colour-text);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li {
+    font-size: 14px;
+    color: var(--colour-text-secondary);
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.skill-list li::before {
+    content: "•";
+    color: var(--colour-text-secondary);
+    /* Line text colour */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}

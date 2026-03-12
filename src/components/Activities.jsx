@@ -1,4 +1,4 @@
-const extracurriculars = [
+const activities = [
     {
         title: 'Outreach Executive - CUTC Organization',
         url: 'https://cutc.ca/',
@@ -19,15 +19,15 @@ const extracurriculars = [
     }
 ];
 
-function Extracurricular() {
+function Activities() {
     return (
-        <section id="extracurricular" className="section experience-section">
+        <section id="activities" className="section experience-section">
             <h2 className="section-label">
-                EXTRACURRICULARS
+                ACTIVITIES
                 <span className="ttc-badge" style={{ backgroundColor: '#0085cd' }}>3</span>
             </h2>
 
-            {extracurriculars.map((exp, index) => (
+            {activities.map((exp, index) => (
                 <div className="experience-block" key={index}>
                     <div className="experience-header">
                         <a href={exp.url} target="_blank" rel="noopener noreferrer">
@@ -44,4 +44,4 @@ function Extracurricular() {
     )
 }
 
-export default Extracurricular
+export default Activities

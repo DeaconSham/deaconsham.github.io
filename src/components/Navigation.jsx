@@ -3,8 +3,10 @@ import { useState, useEffect, useCallback } from 'react'
 const stations = [
     { id: 'bio', label: 'BIO' },
     { id: 'experience', label: 'EXPERIENCE' },
-    { id: 'extracurricular', label: 'EXTRACURRICULARS' },
+    { id: 'activities', label: 'ACTIVITIES' },
     { id: 'projects', label: 'PROJECTS' },
+    { id: 'skills', label: 'SKILLS' },
+    { id: 'connect', label: 'CONNECT' },
 ]
 
 const LINE_COLOUR = '#fccc0a'
