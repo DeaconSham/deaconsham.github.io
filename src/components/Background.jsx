@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 function Background() {
     const [pageHeight, setPageHeight] = useState(1200)
+    const [connectY, setConnectY] = useState(2000)
 
     useEffect(() => {
         const update = () => {
@@ -11,6 +12,13 @@ function Background() {
                 const absoluteBottom = rect.bottom + window.scrollY
                 const truePageBottom = Math.max(absoluteBottom, window.innerHeight)
                 setPageHeight(truePageBottom - 52)
+            }
+
+            const connectSection = document.getElementById('connect')
+            if (connectSection) {
+                const rect = connectSection.getBoundingClientRect()
+                // Target the center of the CONNECT label (approx +17px offset) minus SVG top offset (52px)
+                setConnectY(rect.top + window.scrollY - 52 + 17)
             }
         }
         update()
@@ -24,13 +32,12 @@ function Background() {
     }, [])
 
     const svgHeight = pageHeight
-
-    const stationStart = 950
-    const stationSpacing = 350
-    const stationCount = Math.max(0, Math.floor((svgHeight - stationStart - 200) / stationSpacing))
-
-    const endHubY = stationStart + stationCount * stationSpacing + 150
-
+    const startHubY = 750
+    const endHubY = connectY
+    const availableSpace = (endHubY - 50) - (startHubY + 50)
+    const stationCount = Math.max(0, Math.floor(availableSpace / 350))
+    const stationSpacing = stationCount > 0 ? availableSpace / (stationCount + 1) : 0
+    const stationStart = startHubY + 50 + stationSpacing
     const renderStation = (cx, y, type) => {
         if (type === 0) {
             return <circle cx={cx} cy={y} r="3.5" fill="#ffffff" stroke="#0a0a0a" strokeWidth="1.5" />
