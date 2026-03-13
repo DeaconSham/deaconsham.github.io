@@ -9,7 +9,7 @@ const skillCategories = [
     },
     {
         title: 'Tools',
-        skills: ['Git', 'Linux', 'PyTorch', 'React.js', 'Vite']
+        skills: ['Git', 'Linux', 'PyTorch', 'React.js', 'Vite', 'Flask']
     },
     {
         title: 'Hardware',
