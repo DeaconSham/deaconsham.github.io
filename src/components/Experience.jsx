@@ -1,6 +1,6 @@
 const experiences = [
     {
-        title: 'Machine Learning Researcher - University of Waterloo SEMI/U&AI Labs',
+        title: 'Machine Learning Researcher - SEMI/U&AI Labs',
         url: 'https://ecreager.github.io',
         date: 'April 2026 - Present',
         desc: 'Incoming undergraduate researcher analyzing computer vision and generative AI models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
@@ -18,7 +18,7 @@ const experiences = [
         desc: 'Empowered 2,000+ students across 20+ schools by delivering 10+ curriculum aligned technical workshops and coordinating program logistics.'
     },
     {
-        title: 'Research Assistant - University of Ottawa SQO Group',
+        title: 'Research Assistant - SQO Group',
         url: 'https://sqogroup.ca/',
         date: 'January 2024 - August 2024',
         desc: 'Reduced manual data processing time by 90% by developing an automated Python program and fabricating voltage-tunable liquid crystal optics.'
