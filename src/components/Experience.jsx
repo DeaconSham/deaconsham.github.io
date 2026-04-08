@@ -1,15 +1,21 @@
 const experiences = [
     {
-        title: 'STEM Outreach Instructor - Carleton University',
-        url: 'https://carleton.ca/',
-        date: 'January 2026 - Present',
-        desc: 'Empowered 2,000+ students across 20+ schools by delivering 10+ curriculum aligned technical workshops and coordinating program logistics.'
+        title: 'Machine Learning Researcher - University of Waterloo SEMI/U&AI Labs',
+        url: 'https://ecreager.github.io',
+        date: 'April 2026 - Present',
+        desc: 'Incoming undergraduate researcher analyzing computer vision and generative AI models using PyTorch to evaluate privacy risks and develop ethical guidelines.'
     },
     {
         title: 'Electrical and Firmware Team Member - Midnight Sun',
         url: 'https://www.uwmidsun.com/',
         date: 'September 2025 - Present',
         desc: 'Ensured voltage system protection by implementing I2C sensor drivers and developing C drivers for high voltage charger safety alerts.'
+    },
+    {
+        title: 'STEM Outreach Instructor - Carleton University',
+        url: 'https://carleton.ca/vv/',
+        date: 'January 2026 - April 2026',
+        desc: 'Empowered 2,000+ students across 20+ schools by delivering 10+ curriculum aligned technical workshops and coordinating program logistics.'
     },
     {
         title: 'Research Assistant - University of Ottawa SQO Group',

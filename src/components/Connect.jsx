@@ -12,8 +12,11 @@ function Connect() {
                 <a href="https://linkedin.com/in/deacon-sham" target="_blank" rel="noopener noreferrer">
                     Linkedin
                 </a>
+                <a href="https://x.com/deaconsham" target="_blank" rel="noopener noreferrer">
+                    X
+                </a>
                 <a
-                    href="https://drive.google.com/file/d/13YFBM5cnpjeeFx9RM0yEz6bFFjaMJ9ZT/view?usp=share_link"
+                    href="https://drive.google.com/file/d/1yW7rmRV33931TBpBUhzRawKcxbJnshmh/view?usp=share_link"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
