@@ -16,7 +16,7 @@ function Connect() {
                     X
                 </a>
                 <a
-                    href="https://drive.google.com/file/d/1Q_pR0iKe1glBPk7KWsuiNn3MG7QLAPoj/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1u0f43dLHOaJvN9loUt5v3Jcu2og14-kH/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
