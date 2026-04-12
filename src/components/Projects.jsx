@@ -10,6 +10,16 @@ const projects = [
         url: 'https://github.com/DeaconSham/Delirium-Prevention-Wearable',
     },
     {
+        name: 'Neural Network in C++',
+        desc: 'MNIST MLP implementation in C++/STL and CUDA',
+        url: 'https://github.com/deaconsham/neural-networks-in-cpp-cuda'
+    },
+    {
+        name: 'Badminton Matchmaking',
+        desc: 'Skill-based matchmaking implemented for a badminton club',
+        url: 'https://github.com/deaconsham/badminton-skill-based-matchmaking'
+    },
+    {
         name: 'BENTOgelion',
         desc: 'A survival rover for MakeUofT 2026',
         url: 'https://github.com/DeaconSham/BENTOgelion',
