@@ -16,7 +16,7 @@ const projects = [
     },
     {
         name: 'Badminton Matchmaking',
-        desc: 'Skill-based matchmaking implemented for a badminton club',
+        desc: 'Skill-based matchmaking for a badminton club',
         url: 'https://github.com/deaconsham/badminton-skill-based-matchmaking'
     },
     {
