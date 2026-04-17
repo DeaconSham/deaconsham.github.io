@@ -11,7 +11,7 @@ const projects = [
     },
     {
         name: 'Neural Network in C++',
-        desc: 'MNIST MLP implementation in C++/STL and CUDA',
+        desc: 'MNIST MLP implementation in C++/STL',
         url: 'https://github.com/deaconsham/neural-networks-in-cpp-cuda'
     },
     {
