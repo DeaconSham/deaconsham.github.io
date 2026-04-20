@@ -1,27 +1,19 @@
 const skillCategories = [
     {
         title: 'Embedded',
-        skills: ['C/C++', 'FreeRTOS', 'ARM Cortex-M (STM32)', 'Raspberry Pi', 'CMake', 'I2C/SPI/CAN/UART']
+        skills: ['C/C++', 'ARM Cortex-M (STM32)', 'FreeRTOS', 'I2C/SPI/CAN/UART', 'Raspberry Pi', 'CMake']
     },
     {
         title: 'Software',
-        skills: ['Python', 'MATLAB', 'HTML/CSS', 'JavaScript', 'C#/.NET', 'Java']
+        skills: ['Python', 'JavaScript','HTML/CSS', 'C#/.NET', 'Java', 'MATLAB']
+    },
+    {
+        title: 'Hardware & Laboratory',
+        skills: ['Altium Designer', 'KiCAD', 'Verilog', 'Oscilloscopes', 'DMM', 'Soldering', 'Optical Equipment']
     },
     {
         title: 'Tools',
-        skills: ['Git', 'Linux', 'PyTorch', 'React.js', 'Vite', 'Flask']
-    },
-    {
-        title: 'Hardware',
-        skills: ['Altium Designer', 'KiCAD', 'Verilog']
-    },
-    {
-        title: 'Laboratory',
-        skills: ['Oscilloscopes', 'DMM', 'Soldering', 'Optical Equipment']
-    },
-    {
-        title: 'Languages',
-        skills: ['English (Native)', 'French (Fluent)', 'Cantonese (Intermediate)']
+        skills: ['Git', 'Linux', 'PyTorch', 'NumPy', 'React.js', 'Flask', 'Firebase']
     }
 ];
 
