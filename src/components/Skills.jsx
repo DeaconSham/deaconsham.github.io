@@ -5,7 +5,7 @@ const skillCategories = [
     },
     {
         title: 'Software',
-        skills: ['Python', 'HTML/CSS/JavaScript', 'C#/.NET', 'Java', 'MATLAB', 'SQL']
+        skills: ['Python', 'HTML/CSS/JavaScript', 'C#/.NET', 'Java', 'MATLAB', 'SQL/MySQL']
     },
     {
         title: 'Hardware & Laboratory',
