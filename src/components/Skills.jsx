@@ -5,15 +5,15 @@ const skillCategories = [
     },
     {
         title: 'Software',
-        skills: ['Python', 'HTML/CSS/JavaScript', 'C#/.NET', 'Java', 'MATLAB', 'SQL/MySQL']
+        skills: ['Python', 'HTML/CSS/JavaScript', 'C#/.NET', 'Java', 'MATLAB', 'SQL']
     },
     {
         title: 'Hardware & Laboratory',
-        skills: ['Altium Designer', 'KiCAD', 'Verilog', 'Oscilloscopes', 'DMM', 'Soldering', 'Optical Equipment']
+        skills: ['Altium Designer', 'KiCAD', 'LTSpice', 'Verilog', 'Oscilloscopes', 'DMM', 'Soldering', 'Optical Equipment']
     },
     {
         title: 'Tools',
-        skills: ['Git', 'Linux', 'PyTorch', 'NumPy', 'React.js', 'Flask', 'Firebase']
+        skills: ['Git', 'Linux', 'PyTorch', 'NumPy', 'React.js', 'Flask', 'Firebase', 'MySQL/PostgreSQL']
     }
 ];
 
