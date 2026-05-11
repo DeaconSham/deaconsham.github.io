@@ -18,7 +18,7 @@ const experiences = [
         desc: 'Empowered 2,000+ students across 20+ schools by delivering 10+ curriculum aligned technical workshops and coordinating program logistics.'
     },
     {
-        title: 'Research Assistant - SQO Group',
+        title: 'Quantum Photonics Researcher - SQO Group',
         url: 'https://sqogroup.ca/',
         date: 'January 2024 - August 2024',
         desc: 'Reduced manual data processing time by 90% by developing an automated Python program and fabricating voltage-tunable liquid crystal optics.'
